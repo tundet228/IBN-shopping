@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBN Shopping - The Ultimate Online Store</title>
+    <link rel="stylesheet" href="chat.css">
+    <script src="chat.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">IBN Shopping</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#account">Account</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search products...">
+            <button>Search</button>
+        </div>
+    </header>
+    
+    <main>
+        <section id="banner">
+            <h2>Welcome to IBN Shopping</h2>
+            <p>Your one-stop shop for everything you need!</p>
+            <button>Shop Now</button>
+        </section>
+        
+        <section id="products">
+            <h2>Featured Products</h2>
+            <div class="product-list">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </section>
+        
+        <section id="categories">
+            <h2>Categories</h2>
+            <div class="category-list">
+                <button onclick="filterProducts('electronics')">Electronics</button>
+                <button onclick="filterProducts('fashion')">Fashion</button>
+                <button onclick="filterProducts('home-kitchen')">Home & Kitchen</button>
+                <button onclick="filterProducts('beauty-health')">Beauty & Health</button>
+            </div>
+        </section>
+        
+        
+        <section id="cart">
+            <h2>Shopping Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically loaded here -->
+            </div>
+            <button id="checkout">Proceed to Checkout</button>
+        </section>
+        
+        <section id="checkout-section" class="hidden">
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" required>
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="month" id="expiry-date" required>
+                <label for="cvv">CVV:</label>
+                <input type="password" id="cvv" required>
+                <button type="submit">Pay Now</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 IBN Shopping. All rights reserved.</p>
+        <ul>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms & Conditions</a></li>
+            <li><a href="#support">Customer Support</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+
+
+
